@@ -1,10 +1,12 @@
+"use client"
+
 import React, { useState } from 'react'
-import RevealOnScroll from '../RevealOnScroll'
 import emailjs from "emailjs-com"
 import { MdEmail } from 'react-icons/md';
 import { FaLinkedin, FaPhone } from 'react-icons/fa';
 import { FaPhoneFlip } from 'react-icons/fa6';
 import { IoLocationOutline } from 'react-icons/io5';
+import RevealFramer from '../RevealFramer';
 
 const Contact = () => {
     const [formData , setFormData] = useState({
@@ -34,11 +36,11 @@ const Contact = () => {
     }
 
   return (
-    <section className='min-h-screen flex justify-center py-20 items-center'>
-      <RevealOnScroll>
+    <section className='min-h-screen flex justify-center py-2 items-center'>
+      <RevealFramer>
         <h2 className='text-5xl bg-gradient-to-r from-blue-500 to-cyan-300 bg-clip-text text-transparent text-center font-bold my-10'>Get In Touch</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-30 '>
-            <div className='space-y-8'>
+            {/* <div className='space-y-8'>
                 <h3 className='items-center font-semibold mb-6 text-2xl'>Send Email</h3>
                 <form className='py-5' onSubmit={handleSubmit}>
                 <div className='relative'>
@@ -52,7 +54,7 @@ const Contact = () => {
                 </div>
                 <button type='' className='w-full m-2 h-15  bg-blue-400 text-amber-50 px-5 py-3 rounded transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)] font-bold text-xl'>Submit</button>
                 </form>
-            </div>
+            </div> */}
 
             <div className='space-y-8'> {/* since space-x is for child element of flex container i dont know.. */}
                 <h3 className='text-2xl font-semibold mb-11'>Contact Information</h3>
@@ -88,7 +90,7 @@ const Contact = () => {
 
 
         </div>
-      </RevealOnScroll>
+      </RevealFramer>
     </section>
   )
 }

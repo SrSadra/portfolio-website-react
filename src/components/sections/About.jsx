@@ -1,5 +1,5 @@
 import React from 'react'
-import RevealOnScroll from '../RevealOnScroll';
+import RevealFramer from '../RevealFramer';
 
 const About = () => {
     const frontEndSkills = ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"];
@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <section id='about' className='flex relative justify-center items-center min-h-screen py-5'>
-        <RevealOnScroll>
+        <RevealFramer>
       <div className='mx-auto px-4'>
         <h2 className='text-5xl  font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-300 bg-clip-text text-transparent text-center'>About</h2>
         <div className='rounded-2xl p-8 border '>
@@ -51,7 +51,7 @@ const About = () => {
             </div>
         </div>
       </div>
-        </RevealOnScroll>
+        </RevealFramer>
     </section>
   )
 }

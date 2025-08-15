@@ -1,30 +1,35 @@
-import React from 'react'
-import {useTypewriter , Cursor} from "react-simple-typewriter"
-import RevealOnScroll from '../RevealOnScroll';
+"use client"
+
+
+// import {useTypewriter , Cursor} from "react-simple-typewriter"
+import RevealFramer from '../RevealFramer';
 
 const Home = () => {
-    const [text] = useTypewriter({
-        words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
-        loop: true,
-        typeSpeed: 20,
-        deleteSpeed: 10,
-        delaySpeed: 3000,
-      });
+    // const [text] = useTypewriter({
+    //     words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+    //     loop: true,
+    //     typeSpeed: 20,
+    //     deleteSpeed: 10,
+    //     delaySpeed: 3000,
+    //   });
 
 
   return (
     <section id='home' className='min-h-screen flex items-center ml-100 relative'>
 
-      <RevealOnScroll>
+      <RevealFramer>
       <div className='text-center z-10 px-4'>
         <h1 className='text-5xl md:text-7xl font-bold mb-6 gradient-text leading-right bg-gradient-to-r from-blue-500 to-blue-100 bg-clip-text text-transparent'>Hi , I'm Sadra</h1>
         <h2 className="text-4xl font-bold text-white my-2">
-          a <span>{text}</span>
-          <Cursor
+            a <span>
+              {/* {text} */}
+              tmp
+            </span>
+          {/* <Cursor
             cursorBlinking="false"
             cursorStyle="|"
             cursorColor="antiquewhite"
-          />
+          /> */}
         </h2>
         <p className='mb-24 mt-15 '>
             Hi' im sadra Backend Dev 
@@ -36,7 +41,7 @@ const Home = () => {
         </div>
       </div>
 
-      </RevealOnScroll>
+      </RevealFramer>
     </section>
   )
 }

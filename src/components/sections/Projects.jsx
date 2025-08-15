@@ -1,11 +1,10 @@
-import React from 'react'
-import RevealOnScroll from '../RevealOnScroll'
+import RevealFramer from '../RevealFramer'
 
 const Projects = () => {
   return (
-    <section id='projects' className='min-h-screen flex justify-center items-center py-20'>
+    <section id='projects' className='min-h-screen flex justify-center items-center py-2'>
 
-        <RevealOnScroll>
+        <RevealFramer>
       <div className='max-w-5xl mx-auto px-4'> 
         <h2 className='text-5xl bg-gradient-to-r from-blue-500 to-cyan-300 bg-clip-text text-transparent text-center font-bold my-10'>Featured Projects</h2>
         <div className='grid grid-cols-1 gap-5 w-300'>
@@ -58,7 +57,7 @@ const Projects = () => {
         </div>
       </div>
 
-      </RevealOnScroll>
+      </RevealFramer>
     </section>
   )
 }
