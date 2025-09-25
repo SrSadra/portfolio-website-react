@@ -1,4 +1,5 @@
 import "./global.css"
+import Providers from "./Providers"
 
 
 export const metadata = {
@@ -14,7 +15,9 @@ export default function RootLayout({ children }) {
             <title>Sr Sadra Portfolio</title>
         </head> */}
         <body>
+          <Providers>
             <div id="root">{children}</div>
+          </Providers>
         </body>
     </html>
   )
