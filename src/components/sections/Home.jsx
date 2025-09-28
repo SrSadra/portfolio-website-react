@@ -23,7 +23,6 @@ const Home = () => {
           </div>
           <Stats />
         </div>
-
       </RevealFramer>
     </section>
   )
