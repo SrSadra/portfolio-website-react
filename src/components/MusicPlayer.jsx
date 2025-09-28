@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useRef, useState } from 'react'
 import { FaBackward, FaChevronRight, FaForward, FaPause, FaPlay } from 'react-icons/fa';
 import { GoMute, GoUnmute } from 'react-icons/go';
@@ -90,7 +92,7 @@ const MusicPlayer = ({ songList }) => {
 
 
   return (
-    <div className='group flex flex-col text-white justify-center rounded-2xl shadow-xl xl:p-2 bg-gray-900 transition-all duration-300'>
+    <div className=' fixed bottom-0 left-1 m-4 z-50 group flex flex-col text-white justify-center rounded-2xl shadow-xl xl:p-2 bg-gray-900 transition-all duration-300'>
       <div className='flex group-hover:gap-4 items-center h-40'>
         <div className='flex flex-col xl:w-30 w-20 space-y-2 items-center justify-center relative'>
           <div className="relative group/cover xl:h-22 h-14  xl:w-22 w-14 rounded-full border-4 border-white overflow-hidden">

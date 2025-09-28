@@ -11,7 +11,7 @@ const Navbar = () => {
     
 
     return (
-      <nav className="fixed w-full z-40 h-20 backdrop-blur-lg border-b border-amber-50/10 shadow-lg">
+      <nav className="fixed w-[100vw] z-40 h-20 backdrop-blur-lg border-b border-amber-50/10 shadow-lg">
         <div className="max-w-6xl mx-auto px-4 relative h-full flex items-center">
           {/* Left Logo */}
           <a href="#home" className="text-gray-500 font-bold text-2xl hover:text-amber-50 transition-colors absolute left-4 md:static">

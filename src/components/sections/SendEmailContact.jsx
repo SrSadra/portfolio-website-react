@@ -19,7 +19,7 @@ const SendEmailContact = () => {
     }
 
     return (
-        <div className='space-y-8'>
+        <div className='space-y-8 xl:w-xl'>
             <h3 className='items-center font-semibold mb-6 text-2xl'>Send Email</h3>
             {/* <Form control={control}> */}
             <form  className='py-5' onSubmit={handleSubmit(onSubmit)}>

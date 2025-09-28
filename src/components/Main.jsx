@@ -1,5 +1,6 @@
 
 import Footer from './Footer';
+import MusicPlayer from './MusicPlayer';
 import Navbar from './Navbar';
 import About from './sections/About';
 import Contact from './sections/Contact';
@@ -9,8 +10,9 @@ import Projects from './sections/Projects';
 const Main = () => {
 
   return (
-      <>
-          <Navbar />
+    <>
+      <Navbar />
+        <MusicPlayer songList={[{ artist: "Sadra Music", title: "Wonderland", url: "/lorde.mp3" }]} />
           <Home />
           <About />
           <Projects />

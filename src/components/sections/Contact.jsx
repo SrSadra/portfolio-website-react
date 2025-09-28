@@ -37,13 +37,13 @@ const Contact = () => {
     }
 
   return ( 
-    <section id='contactme' className='min-h-screen flex justify-center py-2 items-center max-w-4xl mx-auto max-h-36'>
+    <section id='contactme' className='min-h-screen flex justify-center py-2 items-center'>
       <RevealFramer>
         <h2 className='text-5xl bg-gradient-to-r from-blue-500 to-cyan-300 bg-clip-text text-transparent text-center font-bold my-10'>Get In Touch</h2>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-30 '>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-x-30 max-w-7xl mx-auto w-full'>
             <SendEmailContact />
 
-            <div className='space-y-8'> {/* since space-x is for child element of flex container i dont know.. */}
+            <div className='space-y-8 max-w-6xl'> {/* since space-x is for child element of flex container i dont know.. */}
                 <h3 className='text-2xl font-semibold mb-11'>Contact Information</h3>
                 <div className='space-y-6 justify-center'> {/* container of infos and images */}
                         <div className='flex items-start space-x-4 space-y-5'>
